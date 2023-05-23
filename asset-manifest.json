@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jlparanal/ecommerce-shop/static/css/main.e58d7837.css",
+    "main.js": "/jlparanal/ecommerce-shop/static/js/main.1830f278.js",
+    "static/media/man-hero.png": "/jlparanal/ecommerce-shop/static/media/man-hero.b0b9d5cf5669f7fd980b.png",
+    "static/media/bg_hero.svg": "/jlparanal/ecommerce-shop/static/media/bg_hero.5b3a28da99dfd198982f.svg",
+    "static/media/logo.svg": "/jlparanal/ecommerce-shop/static/media/logo.7740ae04391d2ede26528c55d3b0102f.svg",
+    "index.html": "/jlparanal/ecommerce-shop/index.html",
+    "main.e58d7837.css.map": "/jlparanal/ecommerce-shop/static/css/main.e58d7837.css.map",
+    "main.1830f278.js.map": "/jlparanal/ecommerce-shop/static/js/main.1830f278.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e58d7837.css",
+    "static/js/main.1830f278.js"
+  ]
+}
