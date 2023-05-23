@@ -4,11 +4,20 @@ import {CartContext} from '../contexts/CartContext';
 import {BsBag} from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Logo from '../img/logo.svg';
+import Searchbar from './Searchbar';
+import { ProductContext } from '../contexts/ProductContext';
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const {isOpen, setIsOpen} = useContext(SidebarContext);
   const {itemAmount} = useContext(CartContext);
+
+  const { handleSearch } = useContext(ProductContext);
+
+  const searchProducts = (data) => {
+    // Update the products with the filtered results
+    handleSearch(data);
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -24,6 +33,9 @@ const Header = () => {
             <img className='w-[40px]' src={Logo} alt='' />
           </div>
         </Link>
+        <div>
+          <Searchbar onSearch={searchProducts} />
+        </div>
         <div onClick={() => setIsOpen(!isOpen)} 
         className='cursor-pointer flex relative'
         >
