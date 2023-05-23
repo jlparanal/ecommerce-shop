@@ -5,19 +5,16 @@ import App from './App';
 import ProductProvider from './contexts/ProductContext';
 import SidebarProvider from './contexts/SidebarContext';
 import CartProvider from './contexts/CartContext';
-import { Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <SidebarProvider>
-        <CartProvider>
-          <ProductProvider>
-            <App />
-          </ProductProvider>
-        </CartProvider>
-      </SidebarProvider>
-    </Router>
-  </React.StrictMode>
+  <SidebarProvider>
+    <CartProvider>
+      <ProductProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ProductProvider>
+    </CartProvider>
+  </SidebarProvider>
 );
