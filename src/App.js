@@ -5,11 +5,15 @@ import ProductDetails from './pages/ProductDetails';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Searchbar from './components/Searchbar';
+
 const App = () => {
   return (
   <div className='overflow-hidden'>
     <Router>
-      <Header/>
+      <Header>
+        <Searchbar />
+      </Header>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/product/:id' element={<ProductDetails />} />
